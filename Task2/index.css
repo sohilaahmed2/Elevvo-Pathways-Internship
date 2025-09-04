@@ -1,0 +1,83 @@
+body {
+    background: url("beautiful-shining-stars-night-sky.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        ". . ."
+        ". form ."
+        ". . .";
+
+
+}
+
+form {
+
+    grid-area: form;
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
+    background: #feffffc1;
+
+    border-radius: 8px;
+    width: 400px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+label {
+    font-size: 18px;
+    color: #02182d;
+    font-weight: bold;
+}
+
+#name:hover,
+#email:hover,
+#subject:hover,
+#message:hover {
+
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+#name,
+#email,
+#subject,
+#message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background: #ffffff50;
+    color: #02182d;
+    ;
+    box-sizing: border-box;
+    border: 2px solid #02182d;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+
+
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background: #02182d;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+.ftitle {
+    text-align: center;
+    color: #02182d;
+    font-size: 30px;
+
+}
